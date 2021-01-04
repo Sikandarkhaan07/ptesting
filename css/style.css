@@ -345,6 +345,9 @@ main{
         transform: translate(5%, 60%);
         width: 340px;
     }
+    .header img{
+        height: 100vh;
+    }
     .resume .resume-content-left h3, .resume .resume-content-right h3{
         margin: 50px 0px 20px -215px;
     }
