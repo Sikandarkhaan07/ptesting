@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+/* some user define variables to code easily */
+:root{
+    --green:#bac964;
+    --bg-black: #060806;
+    --dark-grey: #343a40;
+    --grey: #6c757d;
+    --roboto: 'Roboto', sans-serif;
+    --sans: 'Open Sans Condensed', sans-serif;
+}
+.m{
+    margin: 0px 100px;
+}
+.m-auto{
+    padding: 10px 100px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--bg-black);
+}
+main{
+    width: 100%;
+    overflow-x: hidden;
+}
+.header{
+    width: 100%;
+    height: 150vh;
+    /* background-image: url("/images/2.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header img{
+    position: absolute;
+    top: -200px;
+    left: -350px;
+    z-index: -11;
+    weight: 100%;
+    height: 150vh;
+}
+.navbar-nav{
+    margin-left: 420px;
+}
+.header-intro{
+    transform: translate(50%, 50%);
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+}
+.header-intro h4{
+    color: var(--bg-black);
+    font-size: 35px;
+    font-family: var(--roboto);
+}
+.header-intro h1{
+    color: var(--bg-black);
+    font-size: 65px;
+    font-family: var(--sans);
+}
+.header-intro span{
+    color: var(--grey);
+    font-size: 15px;
+    font-family: var(--roboto);
+}
+.resume{
+    width: 100%;
+    height: 100vh;
+    
+}
+.resume h3{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-family: var(--roboto);
+}
+.resume-content{
+    display: flex;
+    width: 100%;
+    padding: 0px 15px;
+}
+.resume-content-right{
+    margin-left: 170px;
+}
+.resume-content-left h3, .resume-content-right h3{
+    font-family: var(--roboto);
+    margin: 0px 0px 10px -300px;
+}
+.card{
+    background-color: var(--dark-grey);
+    color: white;
+    padding: 10px;
+    margin: 15px 0px;
+}
+.card .card-date{
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+}
+.card .card-date #icon{
+    margin-top: -6px;
+}
+.card .card-title{
+    color: var(--green);
+    font-family: var(--roboto);
+    font-weight: normal;
+    padding-top: 5px;
+}
+.card .card-details p, .card .card-details span{
+    color: var(--grey);
+}
+.about{
+    padding-bottom: 150px;
+}
+.about .row{
+    margin-top: 260px;
+}
+.about .about-left img{
+    width: 500px;
+}
+.about .about-right .title, .services .title,  .contact .title{
+  display: flex;
+  color: white;
+  font-family: var(--roboto);
+}
+.about .about-right .title h3, .services .title h3, .contact .title{
+    padding-right: 7px;
+    margin-top: -3px;
+}
+.about .about-right .title h4{
+    font-weight: bold;
+}
+.about .about-right .detail p{
+    color: var(--grey);
+}
+.about .about-right button, .contact .input #submit{
+    outline: none;
+    background-color: var(--green);
+    border-radius: 30px;
+    border: none;
+    padding: 3px 5px;
+    width: 150px;
+    margin-top: 60px;
+    color: white;
+}
+.services{
+    margin-top: 100px;
+}
+.services .title, .contact .title {
+    padding: 25px 0px 0px 480px;
+}
+.services .card{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 45px;
+    margin-right: 50px;
+}
+.services .service-cards .card .img{
+    width: 100px;
+    height: 100px;
+    background-color: var(--green);
+    margin-left: 90px;
+}
+.services .service-cards .card .img svg{
+    width: 50px;
+    height: 100px;
+    margin-left: 25px;
+}
+.services .service-cards .card .content h3{
+    font-family: var(--roboto);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+.services .service-cards .card .content p{
+    color: var(--grey);
+    font-size: 15px;
+}
+.contact .title h3, .skills .title h3{
+    margin-right: 5px;
+    font-family: var(--roboto);
+}
+.contact .title h4{
+    font-family: var(--roboto);
+    margin: 4px 0px;
+    font-weight: bold;
+}
+.contact .credentials{
+    font-family: var(--roboto);
+    color: white;
+}
+.contact .credentials .input input, .contact .credentials .input textarea{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: var(--dark-grey);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.contact .credentials .input textarea{
+    height: 100px;
+}
+.contact .credentials .input .div h6{
+    font-size: 13px;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+.contact .credentials .input .div span{
+    color:#95989c;
+}
+.footer{
+    display: block;
+}
+.footer .copyright p{
+    text-align: center;
+    color: #2c3e50;
+}
+.footer .icons{
+    display: flex;
+    margin-left: 400px;
+    padding: 100px 0px;
+}
+.footer .icons .item{
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    background: var(--dark-grey);
+    border-radius: 50%;
+}
+.footer .icons .item i{
+    color: var(--green);
+    margin: 17px 18px;
+}
+.skills .title{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: var(--roboto);
+    color: white;
+    transform: translateX(40%);
+}
+.skills .title h4{
+    margin: 3px;
+    font-weight: bold;
+}
+
+
+/* for ipad */
+@media (max-width: 768px){
+    .header{
+        height: 100vh;
+    }
+    .header-intro{
+        transform: translate(80%, 60%);
+        width: 340px;
+    }
+    .navbar-nav{
+        margin-left: 0px;
+    }
+    .resume{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .resume-content{
+        margin: 0px;
+    }
+    .resume .resume-content-left h3, .resume .resume-content-right h3{
+        margin: 50px 0px 20px -142px;
+        padding: 0px 155px;
+    }
+    .card .card-title{
+        padding-top: 10px;
+    }
+    .resume-content-right{
+        margin-left: 123px;;
+    }
+    .about, .services, .contact, .footer{
+        padding: 0px;
+    }
+    .about .row{
+        margin-top: -21px;
+        padding: 0px 30px;
+    }
+    .about .row img{
+        width: 350px;
+    }
+    .about .about-left{
+    margin-bottom: 50px;
+    }
+    .about .about-right button, .contact .input #submit{
+        margin-top: 20px;
+    }
+    .services .title{
+        margin: 60px -153px;
+    }
+    .services .card{
+        margin-right: 0px;
+    }
+    .services .service-cards .card .img {
+        margin-left: 40px;
+    }
+    .skills{
+        padding: 0px;
+    }
+    .skills .title{
+        margin-bottom: 30px;
+        transform: translateX(42%);
+    }
+    .skills .row{
+    padding: 0px 30px;
+    }
+    .contact .title {
+        padding: 25px 0px 0px 321px;
+    }
+    .contact .credentials .input input, .contact .credentials .input textarea{
+        width: 350px;
+        margin: 5px 12px
+    }
+    .contact .row .input h4{
+        margin-top: 20px;
+        margin-left: 12px;
+    }
+    .contact .row .div{
+        margin: 0px 13px;
+    }
+    .footer .icons{
+        display: flex;
+        margin-left: 216px;
+        padding: 20px 40px;
+    }
+    .footer .icons .item{
+        margin-right: 20px;
+    }
+}
+/* for ipad */
+
+/* for iphone 7+ */
+@media (max-width: 414px){
+    .header-intro{
+        transform: translate(5%, 60%);
+        width: 340px;
+    }
+    .resume .resume-content-left h3, .resume .resume-content-right h3{
+        margin: 50px 0px 20px -215px;
+    }
+    .resume-content-right{
+        margin-left: 0px;
+    }
+    .about .row{
+        margin-top: 1080px;
+        padding: 0px 20px 0px 32px;
+    } 
+    .services .title{
+        padding: 50px 0px 0px 275px;
+    }
+    .services .card{
+        margin: 20px 45px;
+    }
+    .services .service-cards .card .img {
+        margin: 10px 115px;
+    }
+    .skills{
+        padding: 0px;
+    }
+    .skills .title{
+        margin-bottom: 30px;
+        transform: translateX(35%);
+    }
+    .skills .row{
+    padding: 0px 30px;
+    }
+    .contact .title{
+        padding: 40px 0px 0px 120px;
+    }
+    .contact .credentials .input input, .contact .credentials .input textarea{
+        width: 350px;
+        margin: 5px 12px
+    }
+    .contact .row .input h4{
+        margin-top: 20px;
+        margin-left: 12px;
+    }
+    .contact .row .div{
+        margin: 0px 13px;
+    }
+    .footer .icons{
+        display: flex;
+        margin-left: 17px;
+        padding: 20px 40px;
+    }
+    .footer .icons .item{
+        margin-right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* for IphoneX */
+ @media (max-width: 375px){
+    .header{
+        height: 100vh;
+    }
+    .header-intro{
+        transform: translate(5%, 60%);
+        width: 340px;
+    }
+    .navbar-nav{
+        margin-left: 0px;
+    }
+    .resume{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .resume-content{
+        margin: 0px;
+    }
+    .resume .resume-content-left h3, .resume .resume-content-right h3{
+        margin: 50px 0px 20px -190px;
+    }
+    .resume-content-right{
+        margin-left: 0px;
+    }
+    .services, .contact, .footer{
+        padding: 0px;
+    }
+    .about{
+        padding-top: 150px;
+    }
+    .about .row{
+        margin-top: 980px;
+        padding: 0px 13px
+    }
+    .about .row img{
+        width: 350px;
+    }
+    .about .about-left{
+    margin-bottom: 50px;
+    }
+    .about .about-right button, .contact .input #submit{
+        margin-top: 20px;
+    }
+    .services .title{
+        padding: 50px 0px 0px 275px;
+    }
+    .services .card{
+        margin-right: 45px;
+    }
+    .services .service-cards .card .img {
+        margin-left: 90px;
+    }
+    .skills{
+        padding: 0px;
+    }
+    .skills .title{
+        margin-bottom: 30px;
+        transform: translateX(35%);
+    }
+    .skills .row{
+    padding: 0px 30px;
+    }
+    .contact .title{
+        padding: 40px 0px 0px 120px;
+    }
+    .contact .credentials .input input, .contact .credentials .input textarea{
+        width: 350px;
+        margin: 5px 12px
+    }
+    .contact .row .input h4{
+        margin-top: 20px;
+        margin-left: 12px;
+    }
+    .contact .row .div{
+        margin: 0px 13px;
+    }
+    .footer .icons{
+        display: flex;
+        margin-left: 17px;
+        padding: 20px 40px;
+    }
+    .footer .icons .item{
+        margin-right: 20px;
+    }
+}

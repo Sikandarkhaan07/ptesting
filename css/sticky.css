@@ -1,0 +1,16 @@
+@media (min-width: 800px){
+    .navbar.sticky {
+        /* width: auto; */
+        background: #fff;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        transition:all 0.5s ease;
+    }
+    .navbar.sticky ul li a {
+        color: #000;
+    }
+    .navbar.sticky ul li a:hover{
+        color: var(--green) !important;
+    }
+}
